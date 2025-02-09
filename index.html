@@ -1,1 +1,58 @@
-nothing
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Chocolate Day!</title>
+    <style>
+        body {
+            background-color: #4B2E2E;
+            color: #FFD700;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        .choco-box {
+            background-color: #8B4513;
+            padding: 20px;
+            border-radius: 15px;
+            display: inline-block;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .btn {
+            background-color: #FFD700;
+            color: #4B2E2E;
+            padding: 15px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+    <h1>🍫 Happy Chocolate Day! 🍫</h1>
+    <div class="choco-box">
+        <p>Life is like a box of chocolates, and you're the sweetest part of mine! 💖</p>
+        <p>May your day be as rich, smooth, and delightful as the finest chocolate!</p>
+        <button class="btn" onclick="showSurprise()">Click for a Sweet Surprise!</button>
+        <p id="surpriseMessage" style="display:none; margin-top:20px;">🍫 Sending you a virtual chocolate hug! 🍫</p>
+    </div>
+
+    <script>
+        function showSurprise() {
+            document.getElementById("surpriseMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
